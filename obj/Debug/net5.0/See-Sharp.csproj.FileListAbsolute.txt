@@ -1,0 +1,16 @@
+D:\Github\C#\See-Sharp\obj\Debug\net5.0\See-Sharp.csprojAssemblyReference.cache
+D:\Github\C#\See-Sharp\obj\Debug\net5.0\See-Sharp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\C#\See-Sharp\obj\Debug\net5.0\See-Sharp.AssemblyInfoInputs.cache
+D:\Github\C#\See-Sharp\obj\Debug\net5.0\See-Sharp.AssemblyInfo.cs
+D:\Github\C#\See-Sharp\obj\Debug\net5.0\See-Sharp.csproj.CoreCompileInputs.cache
+D:\Github\C#\See-Sharp\bin\Debug\net5.0\See-Sharp.exe
+D:\Github\C#\See-Sharp\bin\Debug\net5.0\See-Sharp.deps.json
+D:\Github\C#\See-Sharp\bin\Debug\net5.0\See-Sharp.runtimeconfig.json
+D:\Github\C#\See-Sharp\bin\Debug\net5.0\See-Sharp.runtimeconfig.dev.json
+D:\Github\C#\See-Sharp\bin\Debug\net5.0\See-Sharp.dll
+D:\Github\C#\See-Sharp\bin\Debug\net5.0\ref\See-Sharp.dll
+D:\Github\C#\See-Sharp\bin\Debug\net5.0\See-Sharp.pdb
+D:\Github\C#\See-Sharp\obj\Debug\net5.0\See-Sharp.dll
+D:\Github\C#\See-Sharp\obj\Debug\net5.0\ref\See-Sharp.dll
+D:\Github\C#\See-Sharp\obj\Debug\net5.0\See-Sharp.pdb
+D:\Github\C#\See-Sharp\obj\Debug\net5.0\See-Sharp.genruntimeconfig.cache

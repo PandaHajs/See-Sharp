@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\radyo\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\radyo\\.nuget\\packages"
+    ]
+  }
+}

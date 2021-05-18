@@ -1,0 +1,12 @@
+﻿using System;
+
+namespace See_Sharp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+        }
+    }
+}
