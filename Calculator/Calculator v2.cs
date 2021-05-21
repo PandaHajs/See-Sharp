@@ -217,7 +217,6 @@ namespace Calculator
                 Console.WriteLine("Please input a valid number");
             }else{
             double power02 = Convert.ToInt32(power);
-
             double result = Math.Pow(num02, (1/power02));
 
             Console.WriteLine(num + " rooted to the degree of " + power + " is " + result);
