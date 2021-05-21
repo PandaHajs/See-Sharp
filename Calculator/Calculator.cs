@@ -51,121 +51,178 @@ namespace Calculator
         }
         static void add(){
             Console.WriteLine("How many numbers do you want to add to each other: ");
-            int num = Convert.ToInt32(Console.ReadLine());
-            if(num > 0){
+            var num = Console.ReadLine();
+            if(string.IsNullOrWhiteSpace(num)){
+                Console.WriteLine("Please input a valid number");
+                }else{
+            double num02 = Convert.ToDouble(num);
+            if(num02 > 0){
             double result = 0;
-            num++;
+            num02++;
             
-            for (int i = 1; i < num; i++)
+            for (int i = 1; i < num02; i++)
             {
                 Console.WriteLine("Type in your " + i + " number");
-                double numTyped = Convert.ToDouble(Console.ReadLine());
-                result = result + numTyped;
+                var numTyped = Console.ReadLine();
+                if(string.IsNullOrWhiteSpace(numTyped)){
+                    Console.WriteLine("Please input a valid number");
+                }else{
+                double numTyped02 = Convert.ToDouble(numTyped);
+                result = result + numTyped02;
+                }
             }
             Console.WriteLine("The numbers sum up to: " + result);
-            }
-            else{
-                Console.WriteLine("That's not a valid option");
-            }
-        }
+                }else{
+                    Console.WriteLine("That's not a valid option");
+                }
+        }}
         
         static void sub(){
             Console.WriteLine("How many numbers do you want to subtract from: ");
             Console.WriteLine("THE FIRST NUMBER IS THE ONE YOU WANT TO SUBSTRACT NEXT NUMBERS FROM");
-            int num = Convert.ToInt32(Console.ReadLine());
-            if(num > 0){
+            var num = Console.ReadLine();
+            if(string.IsNullOrWhiteSpace(num)){
+                Console.WriteLine("Please input a valid number");
+            }else{
+            double num02 = Convert.ToDouble(num);
+            if(num02 > 0){
             double result = 0;
-            num++;
+            num02++;
             
-            for (int i = 1; i < num; i++)
+            for (int i = 1; i < num02; i++)
             {
                 Console.WriteLine("Type in your " + i + " number");
-                double numTyped = Convert.ToDouble(Console.ReadLine());
+                var numTyped = Console.ReadLine();
+                if(string.IsNullOrWhiteSpace(numTyped)){
+                    Console.WriteLine("Please input a valid number");
+                }else{
+                double numTyped02 = Convert.ToDouble(numTyped);
                 if(i==1){
-                    result = numTyped;
+                    result = numTyped02;
                 }
                 else{
-                    result = result - numTyped;
+                    result = result - numTyped02;
+                }
                 }
             }
             Console.WriteLine("The number after substraction is: " + result);
-            }
-            else{
+            }else{
                 Console.WriteLine("That's not a valid option");
+                            }
             }
         }
         
         static void mult(){
             Console.WriteLine("How many numbers do you want to multiply with each other: ");
-            int num = Convert.ToInt32(Console.ReadLine());
-            if(num > 0){
+            var num = Console.ReadLine();
+            if(string.IsNullOrWhiteSpace(num)){
+                Console.WriteLine("Please input a valid number");
+            }else{
+            double num02 = Convert.ToDouble(num);
+            if(num02 > 0){
             double result = 1;
-            num++;
+            num02++;
             
-            for (int i = 1; i < num; i++)
+            for (int i = 1; i < num02; i++)
             {
                 Console.WriteLine("Type in your " + i + " number");
-                double numTyped = Convert.ToDouble(Console.ReadLine());
-                result = result * numTyped;
+                var numTyped = Console.ReadLine();
+                if(string.IsNullOrWhiteSpace(numTyped)){
+                    Console.WriteLine("Please input a valid number");
+                }else{
+                double numTyped02 = Convert.ToDouble(Console.ReadLine());
+                result = result * numTyped02;
+                }
             }
             Console.WriteLine("The numbers multiply up to: " + result);
             }
             else{
                 Console.WriteLine("That's not a valid option");
             }
+            }
         }
 
         static void div(){
             Console.WriteLine("How many numbers do you want to divide with each other: ");
-            int num = Convert.ToInt32(Console.ReadLine());
-            if(num > 0){
+            var num = Console.ReadLine();
+            if(string.IsNullOrWhiteSpace(num)){
+                Console.WriteLine("Please input a valid number");
+            }else{
+            double num02 = Convert.ToDouble(num);
+            if(num02 > 0){
             double result = 1;
-            num++;
-            double numTyped = 0;
+            num02++;
+            double numTyped02 = 0;
 
-            for (int i = 1; i < num; i++)
+            for (int i = 1; i < num02; i++)
             {
                 Console.WriteLine("Type in your " + i + " number");
-                numTyped = Convert.ToDouble(Console.ReadLine());
-                if(numTyped != 0){
-                result = result / numTyped;
+                var numTyped = Console.ReadLine();
+                if(string.IsNullOrWhiteSpace(numTyped)){
+                    Console.WriteLine("Please input a valid number");
+                    break;
+                }else{
+                numTyped02 = Convert.ToDouble(numTyped);
+                if(numTyped02 != 0){
+                result = result / numTyped02;
                 }
                 else{
                     Console.WriteLine("You can't divide by 0!");
                     break;
                 }
+                }
             }
-            if(numTyped != 0){
+            if(numTyped02 != 0){
             Console.WriteLine("The number after division is: " + result);}
             }
             else{
                 Console.WriteLine("That's not a valid option");
             }
-        }
+            }
+            }
 
         static void exp(){
             Console.WriteLine("What number do you want to exponentiate");
-            double num = Convert.ToDouble(Console.ReadLine());
+            var num = Console.ReadLine();
+            if(string.IsNullOrWhiteSpace(num)){
+                Console.WriteLine("Please input a valid number");
+            }else{
+            double num02 = Convert.ToDouble(num);
 
             Console.WriteLine("To what power do you want to exponentiate");
-            int power = Convert.ToInt32(Console.ReadLine());
+            var power = Console.ReadLine();
+            if(string.IsNullOrWhiteSpace(power)){
+                Console.WriteLine("Please input a valid number");
+            }else{
+            int power02 = Convert.ToInt32(power);
 
-            double result = Math.Pow(num, power);
+            double result = Math.Pow(num02, power02);
 
             Console.WriteLine(num + " raised to the power of " + power + " is " + result);
+            }
+            }
         }
 
         static void root(){
-            Console.Write("What number do you want to root: ");
-            double num = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("What number do you want to root: ");
+            var num = Console.ReadLine();
+            if(string.IsNullOrWhiteSpace(num)){
+                Console.WriteLine("Please input a valid number");
+            }else{
+            double num02 = Convert.ToDouble(num);
 
-            Console.Write("What degree should the root be: ");
-            double power = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("What degree should the root be: ");
+            var power = Console.ReadLine();
+            if(string.IsNullOrWhiteSpace(power)){
+                Console.WriteLine("Please input a valid number");
+            }else{
+            double power02 = Convert.ToInt32(power);
 
-            double result = Math.Pow(num, (1/power));
+            double result = Math.Pow(num02, (1/power02));
 
             Console.WriteLine(num + " rooted to the degree of " + power + " is " + result);
-
+            }
+            }
         }
     }
 }
