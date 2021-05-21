@@ -176,8 +176,7 @@ namespace Calculator
             Console.WriteLine("The number after division is: " + result);}
             }
             else{
-                Console.WriteLine("That's not a valid option");
-            }
+                Console.WriteLine("That's not a valid option");}
             }
             }
 
